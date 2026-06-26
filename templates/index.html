@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Parking</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">
+            🚗 Smart Parking
+        </div>
+
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#">Parking</a></li>
+            <li><a href="#">Reservation</a></li>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <h1>Welcome to Smart Parking</h1>
+
+        <p>
+            Find, Reserve and Manage your parking space easily.
+        </p>
+
+        <button onclick="window.location.href='#parking'">
+            Book Now
+        </button>
+
+    </section>
+
+    <!-- Parking Section -->
+    <section id="parking">
+
+        <h2>Parking Spaces</h2>
+
+        <div class="parking-container">
+
+            <div class="card available">
+                <h3>A1</h3>
+                <p>🟢 Available</p>
+            </div>
+
+            <div class="card occupied">
+                <h3>A2</h3>
+                <p>🔴 Occupied</p>
+            </div>
+
+            <div class="card available">
+                <h3>A3</h3>
+                <p>🟢 Available</p>
+            </div>
+
+            <div class="card occupied">
+                <h3>A4</h3>
+                <p>🔴 Occupied</p>
+            </div>
+
+            <div class="card available">
+                <h3>B1</h3>
+                <p>🟢 Available</p>
+            </div>
+
+            <div class="card available">
+                <h3>B2</h3>
+                <p>🟢 Available</p>
+            </div>
+
+            <div class="card occupied">
+                <h3>B3</h3>
+                <p>🔴 Occupied</p>
+            </div>
+
+            <div class="card available">
+                <h3>B4</h3>
+                <p>🟢 Available</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 Smart Parking System</p>
+
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
+</html>
